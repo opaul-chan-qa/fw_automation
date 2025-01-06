@@ -1,0 +1,5 @@
+fastwork_web_url:
+    uat: https://staging.fastwork.co/
+
+browser:
+    uat: Chrome
