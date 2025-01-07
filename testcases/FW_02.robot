@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ${CURDIR}/../../import.robot
+Resource    ${CURDIR}/../import.robot
 Suite Setup       Open Browser    ${fastwork_web_url['${ENV}']}    ${browser['${ENV}']}
 Suite Teardown    Close Browser
 

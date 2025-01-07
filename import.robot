@@ -15,7 +15,7 @@ Resource    ${CURDIR}/keywords/pages/sign_up_page.robot
 Resource    ${CURDIR}/keywords/pages/home_page.robot
 
 #common
-Resource    ${CURDIR}/keywords/resources/common.robot
+Resource    ${CURDIR}/keywords/common.robot
 
 #variables
-Variables    ${CURDIR}/keywords/resources/testdata.yaml
+Variables    ${CURDIR}/resources/testdata.yaml

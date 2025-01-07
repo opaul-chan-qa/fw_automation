@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ${CURDIR}/../../import.robot
+Resource    ${CURDIR}/../import.robot
 
 *** Keywords ***
 Generate random email

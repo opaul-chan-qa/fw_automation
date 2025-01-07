@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ${CURDIR}/../../import.robot
+Resource    ${CURDIR}/../import.robot
 Suite Setup       Open Browser    ${fastwork_web_url['${ENV}']}    ${browser['${ENV}']}
 Suite Teardown    Close Browser
 
@@ -12,4 +12,3 @@ Verify user select all checked box then user can click create account button
     sign_up_feature.Selected all checkbox
     sign_up_feature.Click create account button and Verify confirm email page should display
     sign_up_page.Verify email in confirm email page display should matched with input email    ${email}
-

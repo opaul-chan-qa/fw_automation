@@ -8,7 +8,6 @@ Install the latest version (does not upgrade)
 pip install robotframework
 
 ```
-
 2. This is required robot framework library
 
 2.1 SeleniumLibrary
@@ -23,28 +22,28 @@ pip install --upgrade robotframework-seleniumlibrary
 3.1 Run by folder
 
 ```
-robot -v ENV:uat keywords/testcases
+robot -v ENV:uat testcases
 
 ```
 
 3.2 Run by file name
 
 ```
-robot -v ENV:uat keywords/testcases/FW_01.robot
+robot -v ENV:uat testcases/FW_01.robot
 
 ```
 
 3.3 Run by Tag feature
 
 ```
-robot -i sign_up_feature -v ENV:uat keywords/testcases
+robot -i sign_up_feature -v ENV:uat testcases
 
 ```
 
 3.4 Run by Tag case no
 
 ```
-robot -i FW_01 -v ENV:uat keywords/testcases
+robot -i FW_01 -v ENV:uat testcases
 
 ```
 

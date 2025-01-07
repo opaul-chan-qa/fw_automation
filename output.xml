@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.8 on darwin)" generated="2025-01-06T22:51:14.725297" rpa="false" schemaversion="5">
-<suite id="s1" name="Testcases" source="/Users/opaul/Desktop/Fastwork/keywords/testcases">
-<suite id="s1-s1" name="FW 01" source="/Users/opaul/Desktop/Fastwork/keywords/testcases/FW_01.robot">
+<robot generator="Robot 7.0 (Python 3.11.8 on darwin)" generated="2025-01-07T09:09:08.539314" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="/Users/opaul/Desktop/Fastwork_automation/testcases">
+<suite id="s1-s1" name="FW 01" source="/Users/opaul/Desktop/Fastwork_automation/testcases/FW_01.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-01-06T22:51:14.868298" level="INFO">Opening browser 'Chrome' to base url 'https://staging.fastwork.co/'.</msg>
+<msg time="2025-01-07T09:09:08.684187" level="INFO">Opening browser 'Chrome' to base url 'https://staging.fastwork.co/'.</msg>
 <arg>${fastwork_web_url['${ENV}']}</arg>
 <arg>${browser['${ENV}']}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-06T22:51:14.867464" elapsed="2.799213"/>
+<status status="PASS" start="2025-01-07T09:09:08.683386" elapsed="3.709303"/>
 </kw>
 <test id="s1-s1-t1" name="Verify user select all checked box then user can click create account button" line="7">
 <kw name="Click login button and Verify sign up and login page should display" owner="home_feature">
@@ -15,259 +15,259 @@
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${login_button_locator_id}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-06T22:51:17.669011" elapsed="0.575246"/>
+<status status="PASS" start="2025-01-07T09:09:12.400328" elapsed="0.680928"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:18.245740" level="INFO">Clicking element 'id=login-link'.</msg>
+<msg time="2025-01-07T09:09:13.081756" level="INFO">Clicking element 'id=login-link'.</msg>
 <arg>${login_button_locator_id}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.245096" elapsed="0.331221"/>
+<status status="PASS" start="2025-01-07T09:09:13.081512" elapsed="0.510183"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:17.668743" elapsed="0.907749"/>
+<status status="PASS" start="2025-01-07T09:09:12.400083" elapsed="1.191727"/>
 </kw>
 <kw name="Verify sign up page display" owner="sign_up_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${login_and_sign_up_header_xpath}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.576941" elapsed="0.019823"/>
+<status status="PASS" start="2025-01-07T09:09:13.592205" elapsed="0.021533"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:18.576683" elapsed="0.020213"/>
+<status status="PASS" start="2025-01-07T09:09:13.591981" elapsed="0.021865"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:17.668158" elapsed="0.928793"/>
+<status status="PASS" start="2025-01-07T09:09:12.399568" elapsed="1.214321"/>
 </kw>
 <kw name="Click create account and Verify create account should display" owner="sign_up_feature">
 <kw name="Click create account button" owner="sign_up_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:18.597798" level="INFO">Clicking element 'xpath=//span[contains(text(), 'สร้างบัญชี')]'.</msg>
+<msg time="2025-01-07T09:09:13.614668" level="INFO">Clicking element 'xpath=//span[contains(text(), 'สร้างบัญชี')]'.</msg>
 <arg>${create_account_button_xpath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.597639" elapsed="0.073192"/>
+<status status="PASS" start="2025-01-07T09:09:13.614520" elapsed="0.093613"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:18.597479" elapsed="0.073462"/>
+<status status="PASS" start="2025-01-07T09:09:13.614357" elapsed="0.093910"/>
 </kw>
 <kw name="Verify create account page display" owner="sign_up_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${create_account_header_xpath}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.671318" elapsed="0.014042"/>
+<status status="PASS" start="2025-01-07T09:09:13.708662" elapsed="0.019768"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:18.671105" elapsed="0.014349"/>
+<status status="PASS" start="2025-01-07T09:09:13.708440" elapsed="0.020078"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:18.597226" elapsed="0.088272"/>
+<status status="PASS" start="2025-01-07T09:09:13.614118" elapsed="0.114452"/>
 </kw>
 <kw name="Generate random value and Input all field" owner="sign_up_feature">
 <kw name="Generate random email" owner="common">
 <kw name="Generate Random String" owner="String">
-<msg time="2025-01-06T22:51:18.688037" level="INFO">${random_string} = RCeN</msg>
+<msg time="2025-01-07T09:09:13.734813" level="INFO">${random_string} = AtwM</msg>
 <var>${random_string}</var>
 <arg>4</arg>
 <arg>[LETTERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.687565" elapsed="0.000495"/>
+<status status="PASS" start="2025-01-07T09:09:13.733463" elapsed="0.001388"/>
 </kw>
 <kw name="Generate Random String" owner="String">
-<msg time="2025-01-06T22:51:18.688707" level="INFO">${random_number} = 1073</msg>
+<msg time="2025-01-07T09:09:13.735620" level="INFO">${random_number} = 2529</msg>
 <var>${random_number}</var>
 <arg>4</arg>
 <arg>[NUMBERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.688163" elapsed="0.000562"/>
+<status status="PASS" start="2025-01-07T09:09:13.735008" elapsed="0.000636"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-01-06T22:51:18.690398" level="INFO">${random_email} = RCeN1073@gmail.com</msg>
+<msg time="2025-01-07T09:09:13.736322" level="INFO">${random_email} = AtwM2529@gmail.com</msg>
 <var>${random_email}</var>
 <arg>${random_string}${random_number}@${domain_name}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.688889" elapsed="0.001526"/>
+<status status="PASS" start="2025-01-07T09:09:13.735900" elapsed="0.000443"/>
 </kw>
 <return>
 <value>${random_email}</value>
-<status status="PASS" start="2025-01-06T22:51:18.690472" elapsed="0.000099"/>
+<status status="PASS" start="2025-01-07T09:09:13.736442" elapsed="0.000478"/>
 </return>
-<msg time="2025-01-06T22:51:18.690659" level="INFO">${random_email} = RCeN1073@gmail.com</msg>
+<msg time="2025-01-07T09:09:13.737045" level="INFO">${random_email} = AtwM2529@gmail.com</msg>
 <var>${random_email}</var>
 <arg>${domain_name}</arg>
-<status status="PASS" start="2025-01-06T22:51:18.687323" elapsed="0.003350"/>
+<status status="PASS" start="2025-01-07T09:09:13.733019" elapsed="0.004043"/>
 </kw>
 <kw name="Input email" owner="sign_up_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:18.691103" level="INFO">Typing text 'RCeN1073@gmail.com' into text field 'xpath=//input[@placeholder='ระบุอีเมล']'.</msg>
+<msg time="2025-01-07T09:09:13.737550" level="INFO">Typing text 'AtwM2529@gmail.com' into text field 'xpath=//input[@placeholder='ระบุอีเมล']'.</msg>
 <arg>${email_field_xpath}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.690954" elapsed="0.173865"/>
+<status status="PASS" start="2025-01-07T09:09:13.737372" elapsed="0.203217"/>
 </kw>
 <arg>${random_email}</arg>
-<status status="PASS" start="2025-01-06T22:51:18.690771" elapsed="0.174142"/>
+<status status="PASS" start="2025-01-07T09:09:13.737180" elapsed="0.203656"/>
 </kw>
 <kw name="Generate random password" owner="common">
 <kw name="Generate Random String" owner="String">
-<msg time="2025-01-06T22:51:18.865421" level="INFO">${random_string} = Xakk</msg>
+<msg time="2025-01-07T09:09:13.941665" level="INFO">${random_string} = Sgdv</msg>
 <var>${random_string}</var>
 <arg>4</arg>
 <arg>[LETTERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.865269" elapsed="0.000179"/>
+<status status="PASS" start="2025-01-07T09:09:13.941440" elapsed="0.000274"/>
 </kw>
 <kw name="Generate Random String" owner="String">
-<msg time="2025-01-06T22:51:18.865638" level="INFO">${random_number} = 4978</msg>
+<msg time="2025-01-07T09:09:13.941920" level="INFO">${random_number} = 2952</msg>
 <var>${random_number}</var>
 <arg>4</arg>
 <arg>[NUMBERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.865532" elapsed="0.000121"/>
+<status status="PASS" start="2025-01-07T09:09:13.941803" elapsed="0.000137"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-01-06T22:51:18.865838" level="INFO">${random_password} = Xakk4978</msg>
+<msg time="2025-01-07T09:09:13.942241" level="INFO">${random_password} = Sgdv2952</msg>
 <var>${random_password}</var>
 <arg>${random_string}${random_number}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.865726" elapsed="0.000127"/>
+<status status="PASS" start="2025-01-07T09:09:13.942016" elapsed="0.000258"/>
 </kw>
 <return>
 <value>${random_password}</value>
-<status status="PASS" start="2025-01-06T22:51:18.865889" elapsed="0.000036"/>
+<status status="PASS" start="2025-01-07T09:09:13.942329" elapsed="0.000049"/>
 </return>
-<msg time="2025-01-06T22:51:18.866004" level="INFO">${random_password} = Xakk4978</msg>
+<msg time="2025-01-07T09:09:13.942485" level="INFO">${random_password} = Sgdv2952</msg>
 <var>${random_password}</var>
-<status status="PASS" start="2025-01-06T22:51:18.865077" elapsed="0.000941"/>
+<status status="PASS" start="2025-01-07T09:09:13.941151" elapsed="0.001351"/>
 </kw>
 <kw name="Input password" owner="sign_up_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:18.866415" level="INFO">Typing text 'Xakk4978' into text field 'xpath=//input[@placeholder='ระบุรหัสผ่าน']'.</msg>
+<msg time="2025-01-07T09:09:13.942972" level="INFO">Typing text 'Sgdv2952' into text field 'xpath=//input[@placeholder='ระบุรหัสผ่าน']'.</msg>
 <arg>${password_field_xpath}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.866276" elapsed="0.049293"/>
+<status status="PASS" start="2025-01-07T09:09:13.942807" elapsed="0.052683"/>
 </kw>
 <arg>${random_password}</arg>
-<status status="PASS" start="2025-01-06T22:51:18.866110" elapsed="0.049546"/>
+<status status="PASS" start="2025-01-07T09:09:13.942616" elapsed="0.052966"/>
 </kw>
 <kw name="Input confirm password" owner="sign_up_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:18.916172" level="INFO">Typing text 'Xakk4978' into text field 'xpath=//input[@placeholder='ระบุยืนยันรหัสผ่าน']'.</msg>
+<msg time="2025-01-07T09:09:13.996101" level="INFO">Typing text 'Sgdv2952' into text field 'xpath=//input[@placeholder='ระบุยืนยันรหัสผ่าน']'.</msg>
 <arg>${confirm_password_field_xpath}</arg>
 <arg>${confirm_password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.916021" elapsed="0.048076"/>
+<status status="PASS" start="2025-01-07T09:09:13.995954" elapsed="0.051609"/>
 </kw>
 <arg>${random_password}</arg>
-<status status="PASS" start="2025-01-06T22:51:18.915797" elapsed="0.048388"/>
+<status status="PASS" start="2025-01-07T09:09:13.995727" elapsed="0.051923"/>
 </kw>
 <kw name="Generate random mobile number" owner="common">
 <kw name="Generate Random String" owner="String">
-<msg time="2025-01-06T22:51:18.964799" level="INFO">${random_number} = 763334947</msg>
+<msg time="2025-01-07T09:09:14.048248" level="INFO">${random_number} = 530136317</msg>
 <var>${random_number}</var>
 <arg>9</arg>
 <arg>[NUMBERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.964648" elapsed="0.000170"/>
+<status status="PASS" start="2025-01-07T09:09:14.048088" elapsed="0.000178"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-01-06T22:51:18.965002" level="INFO">${mobile_number} = 0763334947</msg>
+<msg time="2025-01-07T09:09:14.048442" level="INFO">${mobile_number} = 0530136317</msg>
 <var>${mobile_number}</var>
 <arg>0${random_number}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.964899" elapsed="0.000119"/>
+<status status="PASS" start="2025-01-07T09:09:14.048348" elapsed="0.000109"/>
 </kw>
 <return>
 <value>${mobile_number}</value>
-<status status="PASS" start="2025-01-06T22:51:18.965054" elapsed="0.000038"/>
+<status status="PASS" start="2025-01-07T09:09:14.048491" elapsed="0.000033"/>
 </return>
-<msg time="2025-01-06T22:51:18.965173" level="INFO">${random_mobile_number} = 0763334947</msg>
+<msg time="2025-01-07T09:09:14.048603" level="INFO">${random_mobile_number} = 0530136317</msg>
 <var>${random_mobile_number}</var>
-<status status="PASS" start="2025-01-06T22:51:18.964345" elapsed="0.000843"/>
+<status status="PASS" start="2025-01-07T09:09:14.047806" elapsed="0.000812"/>
 </kw>
 <kw name="Input mobile number" owner="sign_up_page">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:18.965586" level="INFO">Typing text '0763334947' into text field 'xpath=//input[@placeholder='ระบุเบอร์โทร']'.</msg>
+<msg time="2025-01-07T09:09:14.048996" level="INFO">Typing text '0530136317' into text field 'xpath=//input[@placeholder='ระบุเบอร์โทร']'.</msg>
 <arg>${mobile_number_field_xpath}</arg>
 <arg>${mobile_number}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:18.965451" elapsed="0.053934"/>
+<status status="PASS" start="2025-01-07T09:09:14.048869" elapsed="0.054492"/>
 </kw>
 <arg>${random_mobile_number}</arg>
-<status status="PASS" start="2025-01-06T22:51:18.965286" elapsed="0.054185"/>
+<status status="PASS" start="2025-01-07T09:09:14.048711" elapsed="0.054732"/>
 </kw>
 <return>
 <value>${random_email}</value>
-<status status="PASS" start="2025-01-06T22:51:19.019513" elapsed="0.000040"/>
+<status status="PASS" start="2025-01-07T09:09:14.103485" elapsed="0.000038"/>
 </return>
-<msg time="2025-01-06T22:51:19.019659" level="INFO">${email} = RCeN1073@gmail.com</msg>
+<msg time="2025-01-07T09:09:14.103632" level="INFO">${email} = AtwM2529@gmail.com</msg>
 <var>${email}</var>
 <arg>${FW_01["domain_name"]}</arg>
-<status status="PASS" start="2025-01-06T22:51:18.686121" elapsed="0.333556"/>
+<status status="PASS" start="2025-01-07T09:09:13.728813" elapsed="0.374837"/>
 </kw>
 <kw name="Selected all checkbox" owner="sign_up_feature">
 <kw name="Click checkbox terms and conditions" owner="sign_up_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:19.020320" level="INFO">Clicking element 'id=terms'.</msg>
+<msg time="2025-01-07T09:09:14.104327" level="INFO">Clicking element 'id=terms'.</msg>
 <arg>${check_box_terms_and_conditions_locator_id}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:19.020179" elapsed="0.045592"/>
+<status status="PASS" start="2025-01-07T09:09:14.104180" elapsed="0.046066"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:19.020041" elapsed="0.045816"/>
+<status status="PASS" start="2025-01-07T09:09:14.104037" elapsed="0.046295"/>
 </kw>
 <kw name="Click checkbox privacy policy" owner="sign_up_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:19.066356" level="INFO">Clicking element 'id=privacy'.</msg>
+<msg time="2025-01-07T09:09:14.150838" level="INFO">Clicking element 'id=privacy'.</msg>
 <arg>${check_box_privacy_policy_locator_id}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:19.066202" elapsed="0.041691"/>
+<status status="PASS" start="2025-01-07T09:09:14.150692" elapsed="0.042690"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:19.065997" elapsed="0.041980"/>
+<status status="PASS" start="2025-01-07T09:09:14.150484" elapsed="0.042991"/>
 </kw>
 <kw name="Click checkbox marketing" owner="sign_up_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:19.108445" level="INFO">Clicking element 'id=marketing'.</msg>
+<msg time="2025-01-07T09:09:14.193951" level="INFO">Clicking element 'id=marketing'.</msg>
 <arg>${check_box_marketing_locator_id}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:19.108310" elapsed="0.047833"/>
+<status status="PASS" start="2025-01-07T09:09:14.193805" elapsed="0.052989"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:19.108118" elapsed="0.048441"/>
+<status status="PASS" start="2025-01-07T09:09:14.193616" elapsed="0.053261"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:19.019858" elapsed="0.136965"/>
+<status status="PASS" start="2025-01-07T09:09:14.103849" elapsed="0.143065"/>
 </kw>
 <kw name="Click create account button and Verify confirm email page should display" owner="sign_up_feature">
 <kw name="Click create account button for submit" owner="sign_up_page">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-06T22:51:19.158959" level="INFO">Clicking element 'xpath=//button[@type='submit' and span[text()='สร้างบัญชี']]'.</msg>
+<msg time="2025-01-07T09:09:14.247693" level="INFO">Clicking element 'xpath=//button[@type='submit' and span[text()='สร้างบัญชี']]'.</msg>
 <arg>${create_account_button_locator_id}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-06T22:51:19.158711" elapsed="0.067705"/>
+<status status="PASS" start="2025-01-07T09:09:14.247554" elapsed="0.063460"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:19.158231" elapsed="0.068267"/>
+<status status="PASS" start="2025-01-07T09:09:14.247413" elapsed="0.063692"/>
 </kw>
 <kw name="Verify confirm email page display" owner="sign_up_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${confirm_email_header_xpath}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-06T22:51:19.226824" elapsed="1.078593"/>
+<status status="PASS" start="2025-01-07T09:09:14.311465" elapsed="0.865524"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:19.226635" elapsed="1.078921"/>
+<status status="PASS" start="2025-01-07T09:09:14.311260" elapsed="0.865832"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:19.157548" elapsed="1.148068"/>
+<status status="PASS" start="2025-01-07T09:09:14.247197" elapsed="0.929940"/>
 </kw>
 <kw name="Verify email in confirm email page display should matched with input email" owner="sign_up_page">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//span[contains(text(), 'รหัสยืนยันถูกส่งไปที่อีเมล ${email}')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-06T22:51:20.306265" elapsed="0.015905"/>
+<status status="PASS" start="2025-01-07T09:09:15.177692" elapsed="0.013436"/>
 </kw>
 <arg>${email}</arg>
-<status status="PASS" start="2025-01-06T22:51:20.305905" elapsed="0.016357"/>
+<status status="PASS" start="2025-01-07T09:09:15.177396" elapsed="0.013827"/>
 </kw>
 <tag>FW_01</tag>
 <tag>sign_up_feature</tag>
-<status status="PASS" start="2025-01-06T22:51:17.667011" elapsed="2.655454"/>
+<status status="PASS" start="2025-01-07T09:09:12.397300" elapsed="2.794135"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-01-06T22:51:20.323395" elapsed="0.114113"/>
+<status status="PASS" start="2025-01-07T09:09:15.192228" elapsed="0.097206"/>
 </kw>
-<status status="PASS" start="2025-01-06T22:51:14.739175" elapsed="5.698496"/>
+<status status="PASS" start="2025-01-07T09:09:08.553753" elapsed="6.735759"/>
 </suite>
-<status status="PASS" start="2025-01-06T22:51:14.726268" elapsed="5.712089"/>
+<status status="PASS" start="2025-01-07T09:09:08.540301" elapsed="6.749852"/>
 </suite>
 <statistics>
 <total>
