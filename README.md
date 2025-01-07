@@ -48,5 +48,7 @@ robot -i FW_01 -v ENV:uat testcases
 ```
 
 4. How to view automation results
+
 4.1 Click file log.html
+
 4.2 Select Open with Live Server
